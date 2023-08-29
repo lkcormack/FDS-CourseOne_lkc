@@ -18,7 +18,7 @@ This short reading is a very simple introduction to your computer's terminal and
 We will not attempt to cover the terminal exhaustively, instead, we will focus on the basics needed to get you started and help you use Git and GitHub.
 
 ## The Terminal
-We are used to looking at and operate our personal computers using graphical user interfaces (GUIs). This means that we routinely open files or folders by first finding them using the "finder" (mac) or "browser" (Windows) graphical interface and then clicking on them. We perform a search using a search bar. We navigate the internet using a browesr such as Chrome, Firefox or Safari, we write documents using Google Docs or Microsoft Word. All these are examples of software that uses graphical user interfaces or GUIs. GUIs have revolutionized computers effectively making them accessable to anyone. Before GUIs, however, there was the `Terminal`.
+We are used to using our personal computers using graphical user interfaces (GUIs). This means that we routinely open files or folders by first finding them using the "finder" (mac) or "browser" (Windows) graphical interface and then clicking on them. We perform a search using a search bar. We navigate the internet using a browesr such as Chrome, Firefox or Safari, we write documents using Google Docs or Microsoft Word. All these are examples of software that uses graphical user interfaces or GUIs. GUIs have revolutionized computers effectively making them accessable to anyone. Before GUIs, however, there was the `Terminal`.
 
 ##### Question: Do you know who started the personal computer revolution (name individuals or a company)? 
 
