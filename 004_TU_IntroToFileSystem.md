@@ -1,9 +1,9 @@
-# Introduction to the Unix/Linux Terminal and standard file system
+# Introduction to the Terminal (Mac/Linux) and Powershell (Windows) and standard file system
 
 Learning Goals:
 
-* Learn about the Unix/Linux Terminal (or Windows terminal/console)
-* Navigate the file system using the terminal
+* Learn about the Unix/Linux Terminal or Windows Powershell 
+* Navigate the file system using the terminal/powershell (“terminal” henceforth)
 * Create folders and files with the terminal
 * Learn about the standard filesystem on a computer (UNIX/Linux, macOS and Windows)
 
@@ -11,18 +11,16 @@ Prerequisites:
 
 * Internet access
 * A computer with a terminal application. Basically, any computer (even a Chromebook!)
-* Windows user: [Install Bash on Windows](https://itsfoss.com/install-bash-on-windows/)
+* Windows users – most linux commands have direct equivalents in powershell. Here is a cheatsheet of powershell commands: [pwsh cheatsheet](https://www.stationx.net/powershell-cheat-sheet/)
 
 ### Reading overview
 This short reading is a very simple introduction to your computer's terminal and the system of files and folders on your computer.
-We will not attempt to cover the terminal exhaustively, instead, we will focus on the basics needed to get you started and help you use Git and GitHub. We'll follow this reading up with an in-class exercise to build up our terminal muscles.
+We will not attempt to cover the terminal exhaustively, instead, we will focus on the basics needed to get you started and help you to use Git and GitHub in the future. We'll follow this reading up with an in-class exercise to build up our terminal muscles.
 
 ## The Terminal
 We are used to looking at and operating our personal computers using graphical user interfaces (GUIs). This means that we routinely open files or folders by first finding them using the "finder" (Mac) or "browser" (Windows) graphical interface and then clicking on them. We perform a search using a search bar. We navigate the internet using a browser such as Chrome, Firefox or Safari, we write documents using Google Docs or Microsoft Word. All these are examples of software that uses graphical user interfaces or GUIs. GUIs have revolutionized computers effectively making them accessible to anyone. Before GUIs, however, there was the `Terminal`.
 
-##### Question: Do you know who started the personal computer revolution (name individuals or a company)? 
-
-The terminal is the command line (text) interface to your computer file system and operative system. It is now referred to interchangeably as the terminal, console, shell, or command line. They were called "terminals" because they were literally the end of the line - information from a centralized computer (a "main frame" - generally in another room or even another building) came out as far as the terminus or terminal, and no further. The earliest terminal was the ["teletypewriter" or "tty"](https://en.wikipedia.org/wiki/Teleprinter), literally a modified typewriter. 
+The terminal is the command line (text) interface to your computer file system and operative system. Nowadays it is referred to interchangeably as the terminal, console, shell, or command line. They were called "terminals" because they were literally the end of the line - information from a centralized computer (a "main frame" - generally in another room or even another building) came out as far as the terminus or terminal, and no further. The earliest terminal was the ["teletypewriter" or "tty"](https://en.wikipedia.org/wiki/Teleprinter), literally a modified typewriter. 
 
 ![The Teletypewriter, a.k.a TTY](https://user-images.githubusercontent.com/2119795/151270216-53e6940c-48dd-48c6-899a-de7b395fc3b8.jpg)
 
@@ -30,11 +28,9 @@ The terminal is the command line (text) interface to your computer file system a
 
 Later a one-piece keyboard and monitor combination called a "console" took its place but, of course, these were also called terminals. The "shell" is the software that allows you to interact with the computer's operating system using terminal/console. It is mainly used to run other programs by typing the name of the program plus any options at the "command line", the place where your typing appears ([read here for more information](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)).
 
-Today's "terminal/console" is not an antique thing you plug into your computer, but rather just a window on your desktop that looks and acts like the terminals of yore. But why would we want to seemingly step back in time like this? Because, despite the ease of use of the GUI interface to your computer, the terminal is powerful and often provides faster and easier ways of doing things once you get a little good at using it. In fact, there are still certain things that you can do using the terminal that you cannot do using the GUI.
+Today's "terminal” is not an antique thing you plug into your computer, but rather just a window on your desktop that looks and acts like the terminals of yore. But why would we want to seemingly step back in time like this? Because, despite the ease of use of the GUI interface to your computer, the terminal is powerful and often provides faster and easier ways of doing things once you get a little good at using it. In fact, there are still certain things that you can do using the terminal that you cannot do using the GUI.
 
-##### Question: Do you know who brought back the terminal in the era of personal computers (name individuals or a company and at least a couple of answers might be correct)? 
-
-Most of the following examples will use Mac OSX to demonstrate how to access the Terminal and use basic shell commands (because we use Mac OSX). If you are using Linux (Ubuntu for example) [here is a nice tutorial](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview) on how to access and use the terminal. If you are using Windows, the terminal application is called PowerShell – most or all of the commands we will cover should work "as is" in PowerShell.
+Most of the following examples will use Mac OSX to demonstrate how to access the Terminal and use basic shell commands (because we use Mac OSX). If you are using Linux (Ubuntu for example) [here is a nice tutorial](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview) on how to access and use the terminal. If you are using Windows, the terminal application is called PowerShell – most or all of the commands we will cover should work "as is" in PowerShell. (If a command doesn’t seem to be working in powershell, check out the  [pwsh cheatsheet](https://www.stationx.net/powershell-cheat-sheet/) – it even has a little AI chatbot that can answer questions like “How do I create a new file?”)
 
 ## Opening a terminal
 In Mac OSX you can find the terminal using the search bar.
@@ -42,17 +38,18 @@ In Mac OSX you can find the terminal using the search bar.
 [![Example Video on How-To Find The Unix Terminal on Max OS](https://img.youtube.com/vi/g-U1c2ojls8/0.jpg)](https://youtu.be/g-U1c2ojls8)
 
 If you wish, you can add the Terminal Icon to your Dock.
- 
+
 [![Here is an example on how to do it.](https://img.youtube.com/vi/cE5zXT2aP9Y/0.jpg)](https://youtu.be/cE5zXT2aP9Y)
 
-In Windows, locate and run the "Windows Powershell". In Windows 10 and above, Powershell is installed automatically and is the default program.
-[![Example Video on How-To Find The Powershell on Windows.11](https://img.youtube.com/vi/xxxxxxxxxx/0.jpg)](https://youtu.be/xxxxxxxxx)
+In Windows, locate and run the "Windows Powershell". Open the **Start** menu, type **Windows PowerShell**, select **Windows PowerShell**, then select **Open**.
 
-## The Unix/Linux Filesystem
+## The Unix/Linux and Windows Filesystems
 
 https://en.wikipedia.org/wiki/Unix_filesystem
 
-The filesystem appears as one rooted tree of directories.[1] Instead of addressing separate volumes such as disk partitions, removable media, and network shares as separate trees (as done in DOS and Windows, in which each drive has a drive letter that denotes the root of its file system tree), such volumes can be mounted on a directory, causing the volume's file system tree to appear as that directory in the larger tree.[1] The root of the entire tree is denoted /.
+On a mac or linux, filesystem appears as one rooted tree of directories.[1] such volumes can be mounted on a directory, causing the volume's file system tree to appear as that directory in the larger tree.[1] The “root” (but more like the trunk) of the entire tree is denoted / (the front slash). Everything – everything – on a mac or linux computer is under this root. For example, Larry’s home directory is “/Users/lkcormack”, which can be read right to left as “Larry’s home folder is in the Users directory under root.”
+
+Windows is a little different. In windows, each physical storage device is denoted by a letter, and then files on that device are denoted by a *file path* starting with that letter. So, for example, Larry’s directory on a windows machine might be “C:\Users\lkcormack” (note the backslashes). If you’re on a windows computer, you might be wondering what happened to “A” and “B”. These letters denote the two floppy disc drives that most early personal computers came with. While floppy disks aren’t used anymore, their legacy lives on with the letter “C” denoting your computers hard disk (which, er, really isn’t a disk anymore).
 
 In the original Bell Labs Unix, a two-disk setup was customary, where the first disk contained startup programs, while the second contained users' files and programs. This second disk was mounted at the empty directory named usr on the first disk, causing the two disks to appear as one filesystem, with the second disk’s contents viewable at /usr. Confusingly, /usr is now used for completely different things that you don't need to worry about, and your stuff is in your home directory in the "Users" folder.  
 
@@ -129,10 +126,12 @@ Type `cd GitHub`, and the command will change our current location from the home
 
 ###### (1.5) Create a file inside the folder `GitHub`
 
- Type `touch readme.md` This will create an empty file inside the current directory, that at this point should be the directory `GitHub`.
-      
+ Mac/Linux: Type  `touch readme.md` This will create an empty file inside the current directory, that at this point should be the directory `GitHub`. 
+
+Windows: This is a bit more cumbersome. Ask the cheat sheet for help. The command should look something like `New-Item -ItemType File -Path "newtextfile.txt" `  
+
 ###### (1.6) Edit the file `readme.md` and use MarkDown to make it informative.
- 
+
 Open the file using a basic text editor. On the Mac, you can use TextEdit; on Windows, you can use NotePad. If you're using Linux, you probably don't need advice on this.
 
 Write a short title using the top heading to explain what the goal of the folder `GitHub` will be. For example, "Folder for all my GitHub repositories."
@@ -175,7 +174,7 @@ Apple's macOS is a Linux-based system, as such the FHS also exists on macOS.  Th
 The MacOS simplifies the UNIX FHS for the common users. So, in MacOS, the visible directory structure (the one any user can easily have access to from the GUI) is slightly different than the Unix/Linux Filesystem Hierarchy. The table below is an extract from [an Article by Apple](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html#//apple_ref/doc/uid/TP40010672-CH2-SW14) that covers this more fully. 
 
 The table below shows the top-level directories commonly accessed by a user using the GUI. This file system structure hides the underlying, more complex Linux FHS that still exists on macOS. You can navigate the complete filesystem from a terminal using `ls` and `cd`.
- 
+
 | Directory | Usage |
 | --- | --- |
 | `/Applications` | The directory where apps and programs the users utilize are installed. The directory is intended for use by all users of a computer (if you have multiple users they will all see, read, and write the programs in this folder. The App Store installs apps purchased by the user in this directory automatically. The directory contains a subdirectory called `Utilities`. This folder contains apps and programs that are intended for use not by the user but by the operative system. |
