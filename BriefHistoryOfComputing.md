@@ -4,7 +4,7 @@
 
 Humans have used computing since ancient times. The first step was *external information storage and calculation*. 
 
-
+What do data scientists work with? What do computers do really well?? A marriage made in the grand factory of perfect marriages.
 
 #### Early computers
 
@@ -30,6 +30,10 @@ Humans have used computing since ancient times. The first step was *external inf
 
 #### The Operating System (OS)
 
+*NOTE – dispatch OS history with a sentence or two.*
+
+##### Unix
+
 
 
 ##### DOS
@@ -40,11 +44,15 @@ Humans have used computing since ancient times. The first step was *external inf
 
 
 
+##### Windows
+
+
+
 ##### Linux
 
 
 
-##### Programming languages
+#### Programming languages
 
 
 
@@ -61,6 +69,8 @@ Three analogies
 #### The Cloud (network file servers)
 
 Logical extensions to the file system that provide additional “disk space” in remote locations.
+
+#### Keep Organized!
 
 
 
