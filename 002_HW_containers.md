@@ -1,6 +1,6 @@
 
 
-### Data Structures: Indexing and using Methods
+### Data Structures: Indexing and Using Methods
 
 #### Objective:
 In this assignment, you'll practice indexing strings, tuples, and lists, 
@@ -93,5 +93,4 @@ d) Remove `orange` from the stock.
 
 #### Submission:
 Once you've completed the exercises, convert your notebook into a pdf and submit!
-
 

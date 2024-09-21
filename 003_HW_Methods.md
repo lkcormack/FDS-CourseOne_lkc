@@ -20,7 +20,7 @@
         - Extract and print the elements from index 3 to 6 (inclusive).
         - Extract and print every 2nd element from the list.
         - Extract and print every 2nd element *starting from the end of the list*.
-        
+    
 3. **Tuples:**
     - Given the tuple `tup = (5, 10, 15, 20, 25, 30, 35, 40)`:
         - Extract and print the second element.
@@ -55,6 +55,6 @@
         - Print all the values in the dictionary.
 
 ---
-  
+
 #### Bonus: 
 Make and print a `list` of the keys in the Scooby dictionary using the output of `.keys()`.

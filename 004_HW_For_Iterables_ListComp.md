@@ -16,7 +16,7 @@ Example Output:
 16
 ```
 
-b) Given a list of strings, write a program that prints out the elements of the string in reverse order without reversing the list itself.
+b) Given a list of strings, write a program that prints out the elements of the list in reverse order without reversing the list itself.
 
 Example Input: `["apple", "pear", "kiwi", "grape"]`
 
@@ -74,7 +74,7 @@ Example Input: `["Apple", "Banana", "Cherry", "Date"]`
 Example Output (new list): `["A", "B", "C", "D"]`
 
 #### 2. using list comprehension
-c) Use a list comprehension to compute and save the square roots of a list of numbers from 1 to 10.
+a) Use a list comprehension to compute and save the square roots of a list of numbers from 1 to 10.
 
 Input list: `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`
 
@@ -92,7 +92,7 @@ Expected Output:
  3.1622776601683795]
 ```
 
-d) Given a list of words, use a list comprehension to create a new list containing the last letter of each word.
+b) Given a list of words, use a list comprehension to create a new list containing the last letter of each word.
 
 Example Input: `["apple", "pear", "kiwi", "grape"]`
 
@@ -103,7 +103,7 @@ Expected Output: `["e", "r", "i", "e"]`
 ### Part 4: nested loops
 
 a) Write some code to "flatten" the following list-of-lists-of-lists:
-```
+```python
 deep_list = [[[1, 2, 3, 4], [5, 6, 7, 8]],
             [[9, 10, 11, 12], [13, 14, 15, 16]],
             [[17, 18, 19, 20], [21, 22, 23, 42]]]
